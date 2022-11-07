@@ -1,0 +1,30 @@
+body,
+
+.wrapper {
+height: 100%;
+background: fixed;
+}
+
+@keyframes rotate {
+100% {
+    background-position: 15% 50%;
+}
+}
+body{
+    display: grid;
+    place-items: center;
+    margin: 0px;
+    padding: 0 24px;
+    background-image: url("/img/display1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Mononoki Nerd Font";
+    color: #000;
+    animation: rotate 3s infinite alternate linear;
+}
+
+@media (width >= 1800px) {
+    body {
+    padding: 0;
+    }
+}
